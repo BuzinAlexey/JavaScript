@@ -1,14 +1,12 @@
 //Задание 1
 
 function temp() {
-    let t = document.getElementById("t").value;
-
-    //Делаем заголовок таблицы
-    document.write("<table border=1>");
-    document.write("<tr><th>F</th><th>C</th></tr>");
-    for (let i = t; i <= t; i++) {
-      let c = (i - 32) * (5/9);
-      document.write('<tr><td>'+i+'</td><td>'+c+'</td></tr>');
-    }
-    document.write('</table>');
+  let t = document.getElementById("t").value;
+  let c = (t - 32) * (5/9);
+  alert(`${t} F° -> ${c} C°`);
+  }
+  function temp1() {
+    let t = document.getElementById("t1").value;
+    let f = (t) * (9/5)+32;
+    alert(`${t} C° -> ${f} F°`);
   }
