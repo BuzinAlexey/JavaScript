@@ -28,14 +28,13 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 -->
     <script>
-      ("use strict");
-      num = String(prompt("Введите положительное число"));
+      "use strict";
+
+      const num = prompt("Введите положительное число");
       console.log(`Число ${num}`);
-      let j = num.length-1;
-      for (let i of num) {
-        console.log(`Цифра ${i} принадлежит 10^${j}`);
-        j--;
-      }
+      console.log(`Число сотен: ${num[num.length-3]}`);
+      console.log(`Число десятков: ${num[num.length-2]}`);
+      console.log(`Число едениц: ${num[num.length-1]}`);
     </script>
   </body>
 </html>

@@ -18,10 +18,12 @@
 в консоль "Одно или более значений некорректно.".
 -->
     <script>
-      positive = Number(prompt("Введите положительное число"));
-      negative = Number(prompt("Введите отрицательное число"));
-      numPos = Math.sign(positive);
-      numNeg = Math.sign(negative);
+      "use strict";
+
+      const positive = Number(prompt("Введите положительное число"));
+      const negative = Number(prompt("Введите отрицательное число"));
+      const numPos = Math.sign(positive);
+      const numNeg = Math.sign(negative);
       alert(
         numPos === 1 && numNeg === -1
           ? `Все значения верные.
