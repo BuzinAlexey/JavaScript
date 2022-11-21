@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework</title>
+  </head>
+  <body>
+    <!--
+Создайте функцию которая принимает число, возводит переданное число в куб и 
+возвращает полученное значение. 
+Необходимо продемонстрировать вызов данной функции, с выводом результата, 
+который получаем от функции, в консоль.
+-->
+    <script>
+      "use strict";
+
+      // 1 вариант
+      const cube = (num) => Math.pow(num, 3);
+
+      let num = 5;
+
+      console.log(` ${num}^3 =  ${cube(num)}`);
+
+      // 2 вариант
+      function cube2(num) {
+        return Math.pow(num, 3);
+      }
+
+      let num2 = 6;
+
+      console.log(` ${num2}^3 =  ${cube2(num2)}`);
+
+      // 3 вариант
+      function cube2(num) {
+        let pow3 = num*num*num; 
+        return pow3;
+      }
+
+      let num3 = 4;
+
+      console.log(` ${num3}^3 =  ${cube2(num3)}`);
+    </script>
+  </body>
+</html>
